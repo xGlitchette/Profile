@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Hidden"
+AuthUserFile .htpasswd
+require valid-user
