@@ -37,15 +37,11 @@ audio, video, details, summary
 
 
 
-body, html {height: 100%;
-
-  background-color: #191919;
-  height: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  background-attachment: fixed;
-
+body, html {
+    height: 100%;
+    background-color: #191919;
+    height: inherit;
+    position: absolute;
 }
 
 .MainBox{
@@ -81,6 +77,48 @@ body, html {height: 100%;
     left: 50%;
     top: 11%;
     transform: translate(-50%, -50%);
+}
+
+.quote{
+    font-family: simply2;
+    font-size: 34px;
+    font-style: italic;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+/* Links */
+.mb_links{
+
+    font-family: amyn;
+    font-size:25px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+
+}
+
+.mb_links:hover{
+
+    text-decoration: underline;
+    text-decoration-color:#e990ff;
+
+}
+
+.mbl_about{
+    left:45%;
+}
+.mbl_work{
+    left:50%;
+}
+.mbl_links{
+    left:55%;
 }
 
 .disclaimer{
