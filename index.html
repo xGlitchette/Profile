@@ -11,28 +11,45 @@
 
     <title>Domi's Profile</title>
     <link rel="stylesheet" type="text/css" href="extsheets\css\mainstyle.css">
+    <script src="extsheets\js\mainscript.js"></script>
   </head>
 
   <body>
     <main>
 
-    <div class=MainBox>
-        <h1 class="mb_info username">Glitchette</h1>
-        <h2 class="mb_info name">Dominique · Domi · Glitchy</h2>
-        <h2 class="mb_info quote">"Human beings are strong because we have the ability to change ourselves."</h2>
+      <div id=MainBox>
+        <h1 class="mb_info" id="username">Glitchette</h1>
+        <h2 class="mb_info" id="name">Dominique · Domi · Glitchy</h2>
+        <p class="mb_info" id="blurp">20y/o game designer nerd among other things.</p>
 
         <div class=links>
-          <h3 class="mb_links mbl_about">Profile</h3>
-          <h3 class="mb_links mbl_work">Work</h3>
-          <h3 class="mb_links mbl_links">Links</h3>
+          <h3 class="mb_links" id="mbl_about" onclick="openOverlay()">Profile</h3>
+          <h3 class="mb_links" id="mbl_work" onclick="openOverlay(work)">Work</h3>
+          <h3 class="mb_links" id="mbl_links" onclick="openOverlay(links)">Links</h3>
         </div>
+      </div>
+      <p id="quote">"Human beings are strong because we have the ability to change ourselves."</p>
 
-        <h3 class="mb_info disclaimer">This site is still under construction !! (⌒_⌒;)</h3>
-    </div>
-
-    <div class="profile"></div>
-    <div class="work"></div>
-    <div class="links"></div>
+      <div id="profile" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <div class="overlay-content">
+          a
+        </div>
+      </div>
+  
+      <div id="work" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <div class="overlay-content">
+          a
+        </div>
+      </div>
+  
+      <div id="links" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <div class="overlay-content">
+          a
+        </div>
+      </div>
 
   </main>
 </body>
