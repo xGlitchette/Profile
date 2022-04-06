@@ -23,31 +23,37 @@
         <p class="mb_info" id="blurp">20y/o game designer nerd among other things.</p>
 
         <div class=links>
-          <h3 class="mb_links" id="mbl_about" onclick="openOverlay()">Profile</h3>
-          <h3 class="mb_links" id="mbl_work" onclick="openOverlay(work)">Work</h3>
-          <h3 class="mb_links" id="mbl_links" onclick="openOverlay(links)">Links</h3>
+          <h3 class="mb_links" id="mbl_about" onclick="openOverlay('profile')">Profile</h3>
+          <h3 class="mb_links" id="mbl_work" onclick="openOverlay('work')">Work</h3>
+          <h3 class="mb_links" id="mbl_links" onclick="openOverlay('links')">Links</h3>
         </div>
       </div>
       <p id="quote">"Human beings are strong because we have the ability to change ourselves."</p>
 
       <div id="profile" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay('profile')">&times;</a>
         <div class="overlay-content">
-          a
+          <div id=profileBox>
+            <p class="profileContent"></p>
+          </div>
         </div>
       </div>
   
       <div id="work" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay('work')">&times;</a>
         <div class="overlay-content">
-          a
+          <div id=workBox>
+            <p class="workContent"></p>
+          </div>
         </div>
       </div>
   
       <div id="links" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay('links')">&times;</a>
         <div class="overlay-content">
-          a
+          <div id=linksBox>
+            <p class="linksContent"></p>
+          </div>
         </div>
       </div>
 

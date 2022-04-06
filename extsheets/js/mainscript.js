@@ -1,9 +1,11 @@
 /* Open when someone clicks on the span element */
-function openOverlay() {
-    document.getElementById("profile").style.width = "100%";
+function openOverlay(overlay) {
+    document.getElementById(overlay).style.height = "100%";
+    document.getElementById(overlay + 'Box').style.width = "100%";
   }
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeOverlay(overlay) {
-    document.getElementById(overlay).style.width = "0%";
+    document.getElementById(overlay).style.height = "0%";
+    document.getElementById(overlay + 'Box').style.width = "0%";
   }
