@@ -15,6 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
+  font-display: swap;
 }
 
 body:before {
@@ -31,13 +32,6 @@ body:before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-display: swap;
 }
 
 @font-face {
