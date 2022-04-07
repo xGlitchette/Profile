@@ -3,7 +3,7 @@
 <head>
     <meta
     charset="utf-8"
-    name="description" content="20 year Passionate Game Designer :3 she/her"
+    name="description" content="20 year Passionate Game Designer :3"
     name="keywords" content="Glitchette"
     name="author" content="Glitchette"
     name="viewport" content="width=device-width, initial-scale=1.0"
@@ -18,30 +18,47 @@
     <script src="extsheets\js\mainscript_new.js"></script>
 </head>
 <body>
+    <body onload="age()"></body>
     <main>
     <div id="box">
         <div id="home">
-            <h1 id="name_main" class="content">Glitchette</h1>
-            <h2 id="name_secondary" class="content">Dominique · Domi · Glitchy</h2>
-            <h3 id="blurp" class="content">20y/o game designer nerd among other things.</p>
+            <h1 id="name_main" class="home_content">Glitchette</h1>
+            <h2 id="name_secondary" class="home_content">Dominique · Domi · Glitchy</h2>
+            <h3 id="blurp" class="home_content">20y/o game designer nerd among other things.</p>
             
-            <h3 class="links" id="profileLink" onclick="openBox('profile')">Profile</h3>
-            <h3 class="links" id="portfolioLink" onclick="openBox('portfolio')">Work</h3>
-            <h3 class="links" id="contactLink" onclick="openBox('contact')">Links</h3>
+            <h3 class="home_links" id="profileLink" onclick="openBox('profile')">Profile</h3>
+            <h3 class="home_links" id="portfolioLink" onclick="openBox('portfolio')">Portfolio</h3>
+            <h3 class="home_links" id="contactLink" onclick="openBox('contact')">Links</h3>
         </div>
 
         <div id="profile">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeBox('profile')">&times;</a>
+            <button class="closebtn" id="closebtn_profile" onclick="closeBox('profile')">&times;</button>
+            
+            <div id="personal_info">
+                <p id="fullname">Dominique Vink</p>
+                <p id="usertag">@Glitchette</p>
+                <p id="dob">DEC192001</p>
+                <p id="gender">She/Her</p>
+                <p id="occupation">Game Designer</p>
+            </div>
+            <div id="personal_description">
+                <p id="aboutme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="misc_info">
+            </div>
+            
         </div>
 
         <div id="portfolio">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeBox('portfolio')">&times;</a>
+            <button class="closebtn" id="closebtn_portfolio" onclick="closeBox('portfolio')">&times;</button>
+            <div id="portfolio_content"></div>
         </div>
 
         <div id="contact">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeBox('contact')">&times;</a>
+            <button class="closebtn" id="closebtn_contact" onclick="closeBox('contact')">&times;</button>
+            <div id="contact_content"></div>
         </div>
-        <p id="quote">"Human beings are strong because we have the ability to change ourselves."</p>
+        <a id="quote">"Human beings are strong because we have the ability to change ourselves."</a>
     </div>
     </main>
 </body>

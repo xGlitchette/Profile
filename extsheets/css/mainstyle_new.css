@@ -1,3 +1,22 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
 body:before {
     content: "";
     display: block;
@@ -64,15 +83,16 @@ body:before {
     left: 50%;
     top: 112.5%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
 }
 
-.content {
+.home_content {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.links{
+.home_links{
     position: absolute;
     color: white;
     font-family: amyn;
@@ -83,7 +103,7 @@ body:before {
     text-decoration: none;
     
 }
-  .links:after {
+  .home_links:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -95,17 +115,26 @@ body:before {
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
   }
-  .links:hover:after {
+  .home_links:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
   .closebtn{
       color: white;
+      display: none;
+      background: transparent;
       text-decoration: none;
       font-size: 40px;
       position:absolute;
       left: 0.5%;
+      top: 0.5%;
+      transition: 0.27s;
   }
+  .closebtn:hover{
+    color: #e793d2;
+    transition: 0.27s;
+    cursor: pointer;
+}
   #profileLink {
     left: 42%;
   }
@@ -141,8 +170,24 @@ body:before {
 
 #profile {
     display: none;
+    padding-left: 100px;
+    padding-top: 40px;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
+  #personal_info{
+    position: absolute;
+    top: 25%;
+  }
+  #personal_description{
+    width: 25%;
+    position: absolute;
+    left: 340px;
+    top: 25%;
+  }
 
 #portfolio {
     display: none;
