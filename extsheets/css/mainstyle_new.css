@@ -121,6 +121,8 @@ body:before {
       color: white;
       display: none;
       background: transparent;
+      outline: none;
+      border: none;
       text-decoration: none;
       font-size: 40px;
       position:absolute;
