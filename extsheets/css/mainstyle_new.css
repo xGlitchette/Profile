@@ -46,7 +46,7 @@ body:before {
     top: 50%;
     height: 320px;
     position: fixed;
-    background-color: rgba(41, 41, 41, 0.42);
+    background-color: #3d3d3d6b;
     transition: 0.5s;
     z-index: -1;
     color: white;
@@ -75,6 +75,7 @@ body:before {
     position: absolute;
     color: white;
     font-family: amyn;
+    font-size: 26px;
     top: 73%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -100,6 +101,9 @@ body:before {
   .closebtn{
       color: white;
       text-decoration: none;
+      font-size: 40px;
+      position:absolute;
+      left: 0.5%;
   }
   #profileLink {
     left: 42%;
@@ -118,17 +122,19 @@ body:before {
   #name_main{
       font-family: Goldleaf;
       color: rgb(255, 255, 255);
-      top: 8%;
+      font-size: 48px;
+      top: 20%;
   }
   #name_secondary{
     font-family: simply2;
     color: #e793d2;
-    top: 20%;
+    font-size: 31px;
+    top: 32%;
   }
   #blurp{
-    font-size: 24px;
+    font-size: 22px;
     color: rgb(255, 255, 255);
-    top: 40%;
+    top: 45%;
   }
 
 
