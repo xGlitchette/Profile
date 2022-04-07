@@ -55,6 +55,16 @@ body:before {
     transform: translate(-50%, -50%);
 }
 
+#quote {
+    color: white;
+    position: fixed;
+    font-family: simply2;
+    font-size: 40px;
+    left: 50%;
+    top: 112.5%;
+    transform: translate(-50%, -50%);
+}
+
 .content {
     position: absolute;
     left: 50%;
