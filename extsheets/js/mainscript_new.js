@@ -12,6 +12,11 @@ function closeBox(overlay) {
     document.getElementById('box').style.height = "320px";
 }
 
+function hideAnimation() {
+    var homepage = $('#profile');
+    homepage.toggleClass('hidden');
+}
+
 function age(){
     var dob = new Date("12/19/2001");  
     //calculate month difference from current date in time  

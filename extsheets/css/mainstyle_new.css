@@ -59,6 +59,13 @@ body:before {
   top: -85%;
 }
 
+.hidden {
+  opacity: 0;
+  margin-top: -330px;
+  z-index: -5;
+  transition-timing-function: linear, step-end, step-end;
+}
+
 #box {
     width: 100%;
     top: 50%;
@@ -148,6 +155,7 @@ body:before {
 #home {
     z-index: 0;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 0.1s;
 }
   #name_main{
       font-family: Goldleaf;
@@ -171,30 +179,74 @@ body:before {
 #profile {
     display: none;
     padding-left: 100px;
-    padding-top: 40px;
+    padding-top: 0px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-evenly;
     position: absolute;
     height: 100%;
     width: 100%;
 }
-  #personal_info{
+  #avatar {
+    width: 128px;
+    height: 128px;
     position: absolute;
-    top: 25%;
+    top: 15%;
   }
+  #personal_info > span{
+    position: absolute;
+  }
+    #fullname{
+      left: 12.45%;
+      top: 21%;
+      font-size: 23px;
+    }
+    #usertag{
+      left: 12.65%;
+      top: 24.5%;
+      font-size: 22px;
+      color: gray;
+    }
+    #dob {
+      top: 38%;
+      font-size:17px;
+    }
+    #gender {
+      top: 42%;
+      font-size:17px;
+    }
+    #occupation {
+      top: 46%;
+      font-size:17px;
+    }
+  
   #personal_description{
-    width: 25%;
+    width: 40%;
     position: absolute;
-    left: 340px;
-    top: 25%;
+    left: 26%;
+    top: 38%;
   }
+    #personal_description > #bio{
+      width:50%;
+      font-size: 18.5px;
+    }
+
+    #misc_info{
+      width: 40%;
+      position: absolute;
+      right: 2%;
+      top: 38%;
+    }
 
 #portfolio {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 200px;
 }
 
-#links {
+#contact {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 200px;
 }
