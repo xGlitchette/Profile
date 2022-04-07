@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta
     charset="utf-8"
     name="description" content="20 year old nerd edgy as hell gaymer girl wooooooooooooooo···"
@@ -9,54 +9,35 @@
     name="viewport" content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Domi's Profile</title>
-    <link rel="stylesheet" type="text/css" href="extsheets\css\mainstyle.css">
-    <script src="extsheets\js\mainscript.js"></script>
-  </head>
-
-  <body>
+    <title>Glitchette</title>
+    <link rel="stylesheet" type="text/css" href="extsheets\css\mainstyle_new.css">
+    <script src="extsheets\js\mainscript_new.js"></script>
+</head>
+<body>
     <main>
-
-      <div id=MainBox>
-        <h1 class="mb_info" id="username">Glitchette</h1>
-        <h2 class="mb_info" id="name">Dominique · Domi · Glitchy</h2>
-        <p class="mb_info" id="blurp">20y/o game designer nerd among other things.</p>
-
-        <div class=links>
-          <h3 class="mb_links" id="mbl_about" onclick="openOverlay('profile')">Profile</h3>
-          <h3 class="mb_links" id="mbl_work" onclick="openOverlay('work')">Work</h3>
-          <h3 class="mb_links" id="mbl_links" onclick="openOverlay('links')">Links</h3>
+    <div id="box">
+        <div id="home">
+            <h1 id="name_main" class="content">Glitchette</h1>
+            <h2 id="name_secondary" class="content">Dominique · Domi · Glitchy</h2>
+            <h3 id="blurp" class="content">20y/o game designer nerd among other things.</p>
+            
+            <h3 class="links" id="profileLink" onclick="openBox('profile')">Profile</h3>
+            <h3 class="links" id="portfolioLink" onclick="openBox('portfolio')">Work</h3>
+            <h3 class="links" id="contactLink" onclick="openBox('contact')">Links</h3>
         </div>
-      </div>
-      <p id="quote">"Human beings are strong because we have the ability to change ourselves."</p>
 
-      <div id="profile" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay('profile')">&times;</a>
-        <div class="overlay-content">
-          <div id=profileBox>
-            <p class="profileContent"></p>
-          </div>
+        <div id="profile">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeBox('profile')">&times;</a>
         </div>
-      </div>
-  
-      <div id="work" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay('work')">&times;</a>
-        <div class="overlay-content">
-          <div id=workBox>
-            <p class="workContent"></p>
-          </div>
-        </div>
-      </div>
-  
-      <div id="links" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay('links')">&times;</a>
-        <div class="overlay-content">
-          <div id=linksBox>
-            <p class="linksContent"></p>
-          </div>
-        </div>
-      </div>
 
-  </main>
+        <div id="portfolio">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeBox('portfolio')">&times;</a>
+        </div>
+
+        <div id="contact">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeBox('contact')">&times;</a>
+        </div>
+    </div>
+    </main>
 </body>
 </html>
