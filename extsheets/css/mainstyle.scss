@@ -18,6 +18,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-display: swap;
 }
 
+$desktop: 1200px; // xl
+$laptop: 992px; // lg
+$tablet: 768px; // md
+$phone: 480px;  // sm
+
 body:before {
     content: "";
     display: block;
@@ -56,14 +61,7 @@ body:before {
 }
 
 #wip_disclaimer{
-  top: -85%;
-}
-
-.hidden {
-  opacity: 0;
-  margin-top: -330px;
-  z-index: -5;
-  transition-timing-function: linear, step-end, step-end;
+  top: -65%;
 }
 
 #box {
@@ -85,95 +83,93 @@ body:before {
     position: fixed;
     font-family: simply2;
     font-size: 40px;
+    text-align: center;
     left: 50%;
     top: 112.5%;
     transform: translate(-50%, -50%);
     text-decoration: none;
+    @media (max-width:$tablet) {
+        font-size: 35px;
+        top: 120%;
+    }
 }
 
-.home_content {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.home_links{
-    position: absolute;
+.closebtn{
     color: white;
-    font-family: amyn;
-    font-size: 26px;
-    top: 73%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+    display: none;
+    background: transparent;
+    outline: none;
+    border: none;
     text-decoration: none;
-    
+    font-size: 40px;
+    position:absolute;
+    left: 0.5%;
+    top: 0.5%;
+    transition: 0.27s;
 }
-  .home_links:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #e793d2;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-  }
-  .home_links:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  .closebtn{
-      color: white;
-      display: none;
-      background: transparent;
-      outline: none;
-      border: none;
-      text-decoration: none;
-      font-size: 40px;
-      position:absolute;
-      left: 0.5%;
-      top: 0.5%;
-      transition: 0.27s;
-  }
   .closebtn:hover{
     color: #e793d2;
     transition: 0.27s;
     cursor: pointer;
-}
-  #profileLink {
-    left: 42%;
-  }
-  #portfolioLink {
-    left: 50%;
-  }
-  #contactLink {
-    left: 58%;
   }
 
 #home {
     z-index: 0;
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.1s;
+
+    .home_content {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #homeMenu {
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        & ul {
+          font-family: amyn;
+          font-size: 29px;
+          display: inline-flex;
+          margin: 0.6em;
+          cursor: pointer;
+          @media (max-width:$tablet) {
+              margin: 0.2em;
+              font-size: 20px;
+              display: flex;
+          }
+        }
+    }
+
+    #name_main{
+        font-family: Goldleaf;
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        top: 20%;
+    }
+    #name_secondary{
+        font-family: simply2;
+        color: #e793d2;
+        font-size: 31px;
+        top: 32%;
+        @media (max-width:$phone) {
+            font-size: 23.5px;
+        }
+    }
+    #blurp{
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        top: 45%;
+        @media (max-width:$tablet) {
+            font-size: 16px;
+        }
+    }
 }
-  #name_main{
-      font-family: Goldleaf;
-      color: rgb(255, 255, 255);
-      font-size: 48px;
-      top: 20%;
-  }
-  #name_secondary{
-    font-family: simply2;
-    color: #e793d2;
-    font-size: 31px;
-    top: 32%;
-  }
-  #blurp{
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-    top: 45%;
-  }
 
 
 #profile {
@@ -185,57 +181,36 @@ body:before {
     position: absolute;
     height: 100%;
     width: 100%;
-}
-  #avatar {
-    width: 128px;
-    height: 128px;
-    position: absolute;
-    top: 15%;
-  }
-  #personal_info > span{
-    position: absolute;
-  }
-    #fullname{
-      left: 12.45%;
-      top: 21%;
-      font-size: 23px;
-    }
-    #usertag{
-      left: 12.65%;
-      top: 24.5%;
-      font-size: 22px;
-      color: gray;
-    }
-    #dob {
-      top: 38%;
-      font-size:17px;
-    }
-    #gender {
-      top: 42%;
-      font-size:17px;
-    }
-    #occupation {
-      top: 46%;
-      font-size:17px;
-    }
-  
-  #personal_description{
-    width: 40%;
-    position: absolute;
-    left: 26%;
-    top: 38%;
-  }
-    #personal_description > #bio{
-      width:50%;
-      font-size: 18.5px;
+
+    #avatar {
+        width: 128px;
+        height: 128px;
+        position: absolute;
+        top: 15%;
     }
 
-    #misc_info{
-      width: 40%;
-      position: absolute;
-      right: 2%;
-      top: 38%;
+    #personal_info{
+        position: absolute;
     }
+
+    #personal_description{
+        width: 40%;
+        position: absolute;
+        left: 26%;
+        top: 38%;
+        & #bio {
+            width: 50%;
+            font-size: 18.5px;
+        }
+    }
+    
+    #misc_info{
+        width: 40%;
+        position: absolute;
+        right: 2%;
+        top: 38%;
+    }
+}
 
 #portfolio {
     display: none;
