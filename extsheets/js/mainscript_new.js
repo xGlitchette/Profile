@@ -1,4 +1,4 @@
-let currentMenu = home;
+let currentMenu = 'home';
 
 window.onpopstate = function(event) {
     event.preventDefault();
@@ -16,7 +16,7 @@ function openBox(overlay) {
 }
 
 function closeBox(overlay) {
-    let currentMenu = home;
+    let currentMenu = 'home';
     document.getElementById('home').style.display = "block";
     document.getElementById('closebtn_' + overlay).style.display = "none";
     document.getElementById(overlay).style.display = "none";
