@@ -23,7 +23,7 @@ function closeBox(overlay) {
 
 function onLoadFunction(){
     let currentMenu = home;
-    age()
+    age();
 }
 
 function age(){
