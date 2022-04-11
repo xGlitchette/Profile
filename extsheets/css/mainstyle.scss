@@ -175,8 +175,6 @@ $phone: 480px;  // sm
 
 #profile {
     display: none;
-    padding-left: 100px;
-    padding-top: 0px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-evenly;
     position: absolute;
@@ -187,11 +185,22 @@ $phone: 480px;  // sm
         width: 128px;
         height: 128px;
         position: absolute;
-        top: 15%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #personal_info{
         position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        span {
+            position: fixed;
+            transform: translate(-50%, -50%);
+        }
+        #fullname {
+            top: 240px;
+        }
     }
 
     #personal_description{

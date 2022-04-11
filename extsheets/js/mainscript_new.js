@@ -1,30 +1,32 @@
-let currentMenu = 'home';
-
-window.onpopstate = function(event) {
-    event.preventDefault();
-    if (currentMenu != home) {
-        closeBox();
+function uriHandler(){
+    if (window.location.hash.substr(1)) {
+        uri = window.location.hash.substr(1)
+        openBox(uri)
     }
-};
+}
 
 function openBox(overlay) {
     let currentMenu = overlay;
+    console.log('OPENED ' + currentMenu + ' // CLOSED home')
     document.getElementById('home').style.display = "none";
     document.getElementById('closebtn_' + overlay).style.display = "block";
     document.getElementById(overlay).style.display = "block";
-    document.getElementById('box').style.height = "640px";
+    document.getElementById('box').style.height = "700px";
+    //640 on phone, add later
 }
 
 function closeBox(overlay) {
     let currentMenu = 'home';
+    console.log('OPENED ' + currentMenu + ' // CLOSED ' + overlay)
     document.getElementById('home').style.display = "block";
     document.getElementById('closebtn_' + overlay).style.display = "none";
     document.getElementById(overlay).style.display = "none";
     document.getElementById('box').style.height = "320px";
 }
 
-function onLoadFunction(){
+function onLoadFunc(){
     age();
+    uriHandler();
 }
 
 function age(){
