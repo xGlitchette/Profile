@@ -1,11 +1,11 @@
 let currentMenu = home;
 
-history.pushState(null, null, location.href);
-    window.onpopstate = function () {
-        if (currentMenu != home) {
-            closeBox();
-        }
-    };
+window.onpopstate = function(event) {
+    event.preventDefault();
+    if (currentMenu != home) {
+        closeBox();
+    }
+};
 
 function openBox(overlay) {
     let currentMenu = overlay;
