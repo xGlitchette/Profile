@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#795685" data-react-helmet="true"/>
     <meta property="og:title" content="Hi, I'm Glitchette,"/>
     <meta property="og:site_name" content="Glitchy.ga"/>
-    <meta property="og:description" content="a 20y/o amazing game designer! 😎"/>
+    <meta property="og:description" content="a 20y/o amazing game designer!"/>
     <meta property="og:image" content="https://www.glitchy.ga/assets/images/hutaoinsane.png"/>
 
     <title>Hi, I'm Glitchette</title>
@@ -18,12 +18,14 @@
     <script src="extsheets\js\mainscript_new.js"></script>
 </head>
 <body>
-    <body onload="age()"></body>
+    <body onload="onLoadFunc()"></body>
     <main>
     <div id="box">
         <div id="home">
             <menu id="homeMenu">
-                <ul data-hover="profile" onclick="openBox('profile')">Profile</ul><ul data-hover="portfolio" onclick="openBox('portfolio')">Portfolio</ul><ul data-hover="contact" onclick="openBox('contact')">Links</ul>
+                <li> <p onclick="openBox('profile')">Profile</p></li>
+                <li> <p onclick="openBox('portfolio')">Portfolio</p></li>
+                <li> <p onclick="openBox('contact')">Links</p></li>
             </menu>
             <h1 id="name_main" class="home_content">Glitchette</h1>
             <h2 id="name_secondary" class="home_content">Dominique · Domi · Glitchy</h2>

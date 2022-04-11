@@ -1,4 +1,12 @@
+if (currentMenu != home) {
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        closeBox();
+    };
+}
+
 function openBox(overlay) {
+    let currentMenu = overlay;
     document.getElementById('home').style.display = "none";
     document.getElementById('closebtn_' + overlay).style.display = "block";
     document.getElementById(overlay).style.display = "block";
@@ -6,15 +14,16 @@ function openBox(overlay) {
 }
 
 function closeBox(overlay) {
+    let currentMenu = home;
     document.getElementById('home').style.display = "block";
     document.getElementById('closebtn_' + overlay).style.display = "none";
     document.getElementById(overlay).style.display = "none";
     document.getElementById('box').style.height = "320px";
 }
 
-function hideAnimation() {
-    var homepage = $('#profile');
-    homepage.toggleClass('hidden');
+function onLoadFunction(){
+    let currentMenu = home;
+    age()
 }
 
 function age(){

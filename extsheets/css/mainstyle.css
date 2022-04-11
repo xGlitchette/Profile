@@ -143,7 +143,7 @@ body:before {
           transform: translate(-50%, -50%);
 }
 
-#home #homeMenu ul {
+#home #homeMenu li {
   font-family: amyn;
   font-size: 29px;
   display: -webkit-inline-box;
@@ -154,7 +154,7 @@ body:before {
 }
 
 @media (max-width: 768px) {
-  #home #homeMenu ul {
+  #home #homeMenu li {
     margin: 0.2em;
     font-size: 20px;
     display: -webkit-box;

@@ -104,12 +104,12 @@ $phone: 480px;  // sm
     left: 0.5%;
     top: 0.5%;
     transition: 0.27s;
+    &:hover{
+        color: #e793d2;
+        transition: 0.27s;
+        cursor: pointer;
+    }
 }
-  .closebtn:hover{
-    color: #e793d2;
-    transition: 0.27s;
-    cursor: pointer;
-  }
 
 #home {
     z-index: 0;
@@ -129,12 +129,15 @@ $phone: 480px;  // sm
         left: 50%;
         top: 70%;
         transform: translate(-50%, -50%);
-        & ul {
+        & li {
           font-family: amyn;
           font-size: 29px;
           display: inline-flex;
           margin: 0.6em;
           cursor: pointer;
+          @media (min-width:$laptop) {
+              // Animation
+          }
           @media (max-width:$tablet) {
               margin: 0.2em;
               font-size: 20px;
