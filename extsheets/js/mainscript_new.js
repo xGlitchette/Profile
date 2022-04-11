@@ -1,9 +1,11 @@
-if (currentMenu != home) {
-    history.pushState(null, null, location.href);
+let currentMenu = home;
+
+history.pushState(null, null, location.href);
     window.onpopstate = function () {
-        closeBox();
+        if (currentMenu != home) {
+            closeBox();
+        }
     };
-}
 
 function openBox(overlay) {
     let currentMenu = overlay;
@@ -22,7 +24,6 @@ function closeBox(overlay) {
 }
 
 function onLoadFunction(){
-    let currentMenu = home;
     age();
 }
 
