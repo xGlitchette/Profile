@@ -1,11 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -58,6 +51,14 @@ body:before {
 
 #wip_disclaimer {
   top: -65%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #wip_disclaimer {
+    font-size: 18px;
+    top: -25%;
+  }
 }
 
 #box {
@@ -91,8 +92,8 @@ body:before {
 
 @media (max-width: 768px) {
   #quote {
-    font-size: 35px;
-    top: 120%;
+    font-size: 30px;
+    top: 123%;
   }
 }
 
