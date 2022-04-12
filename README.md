@@ -2,6 +2,7 @@
 
 **Todo:** 
 * Make favicon bozo stay mad
+* Background selector / swapper with support for cookies
 * Compress Background & Implement LazyLoading
 * Content in the tabs
   * Widget with sideways scroll or something for portfolio with my stuff
