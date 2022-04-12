@@ -1,6 +1,7 @@
 # Profile
 
 **Todo:** 
+* Make favicon bozo stay mad
 * Compress Background & Implement LazyLoading
 * Content in the tabs
   * Widget with sideways scroll or something for portfolio with my stuff
