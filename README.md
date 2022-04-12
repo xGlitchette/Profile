@@ -8,7 +8,7 @@
 * Accessibility Features
   * Low Motion mode
   * Hide Background
-  * Different font
+  * Option to swap fonts
   * Keyboard Focusable
 
 * Convert everything to ReactJS :pain:
