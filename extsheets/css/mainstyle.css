@@ -198,13 +198,10 @@ body:before {
 
 #profile {
   display: none;
+  z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 #profile #avatar {
@@ -217,53 +214,127 @@ body:before {
           transform: translate(-50%, -50%);
 }
 
-#profile #personal_info {
+#profile #info {
   position: absolute;
   left: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#profile #info span {
+  position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-#profile #personal_info span {
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+#profile #info #fullname {
+  top: 31%;
 }
 
-#profile #personal_info #fullname {
-  top: 240px;
+#profile #info #usertag {
+  top: 34%;
+  color: #696969;
+  font-style: oblique;
+  font-size: 0.85em;
+}
+
+#profile #info #dob {
+  top: 2%;
+  color: #a1a1a1;
+}
+
+#profile #info #gender {
+  top: 9%;
+  color: white;
+}
+
+#profile #info #occupation {
+  top: 5.35%;
+  color: #dadada;
+}
+
+#profile #info #disclaimer_prof {
+  color: red;
+  top: 80%;
+  font-family: goldleaf;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #profile #info #disclaimer_prof {
+    font-size: 0.8em;
+  }
 }
 
 #profile #personal_description {
-  width: 40%;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 100%;
   position: absolute;
-  left: 26%;
-  top: 38%;
+}
+
+@media (max-width: 768px) {
+  #profile #personal_description {
+    width: 60%;
+    top: 51%;
+    font-size: 20px;
+  }
+}
+
+#profile #personal_description p {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #profile #personal_description #bio {
-  width: 50%;
-  font-size: 18.5px;
+  font-style: italic;
 }
 
 #profile #misc_info {
-  width: 40%;
+  top: 10%;
   position: absolute;
-  right: 2%;
-  top: 38%;
+}
+
+#profile #misc_info span {
+  position: absolute;
 }
 
 #portfolio {
   display: none;
+  z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding-top: 200px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#portfolio #tba1 {
+  left: 50%;
+  top: 30%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #contact {
   display: none;
+  z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding-top: 200px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#contact #tba2 {
+  left: 50%;
+  top: 30%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=mainstyle.css.map */

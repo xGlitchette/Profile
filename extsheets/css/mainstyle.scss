@@ -8,7 +8,7 @@
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
-  font-display: swap;
+    font-display: swap;
 }
 
 body:before {
@@ -175,12 +175,9 @@ $phone: 480px;  // sm
 
 #profile {
     display: none;
+    z-index: 0;
     font-family: Arial, Helvetica, sans-serif;
-    justify-content: space-evenly;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
+    transition: 0.1s;
     #avatar {
         width: 128px;
         height: 128px;
@@ -189,51 +186,101 @@ $phone: 480px;  // sm
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    #personal_info{
+    #info {
         position: absolute;
         left: 50%;
-        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
         span {
-            position: fixed;
+            position:absolute;
             transform: translate(-50%, -50%);
         }
         #fullname {
-            top: 240px;
+            top: 31%;
+        }
+        #usertag {
+            top: 34%;
+            color:#696969;
+            font-style:oblique;
+            font-size: 0.85em;
+        }
+        #dob {
+            top: 2%;
+            color: rgb(161, 161, 161);
+        }
+        #gender {
+            top: 9%;
+            color: rgb(255, 255, 255);
+        }
+        #occupation {
+            top: 5.35%;
+            color: rgb(218, 218, 218);
+        }
+        #disclaimer_prof {
+            color: red;
+            top: 80%;
+            font-family:goldleaf;
+            font-size: 1.3em;
+            text-align: center;
+            @media (max-width:$tablet) {
+                font-size: 0.8em;
+            }
         }
     }
-
     #personal_description{
-        width: 40%;
+        top: 50%;
+        left: 50%;
+        width: 30%;
+        height: 100%;
         position: absolute;
-        left: 26%;
-        top: 38%;
-        & #bio {
-            width: 50%;
-            font-size: 18.5px;
+        @media (max-width:$tablet) {
+            width: 60%;
+            top: 51%;
+            font-size: 20px;
+        }
+        p {
+            position: absolute;
+            display: flex;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+        #bio {
+            font-style: italic;
         }
     }
-    
     #misc_info{
-        width: 40%;
+        top: 10%;
         position: absolute;
-        right: 2%;
-        top: 38%;
+        span {
+            position: absolute;
+        }
     }
 }
 
 
 #portfolio {
     display: none;
+    z-index: 0;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 200px;
+    transition: 0.1s;
+    #tba1 {
+        left: 50%;
+        top: 30%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
 }
 
 
 #contact {
     display: none;
+    z-index: 0;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 200px;
+    transition: 0.1s;
+    #tba2 {
+        left: 50%;
+        top: 30%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
 }

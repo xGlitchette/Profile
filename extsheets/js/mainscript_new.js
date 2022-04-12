@@ -1,7 +1,7 @@
 function uriHandler(){
-    if (window.location.hash.substr(1)) {
-        uri = window.location.hash.substr(1)
-        openBox(uri)
+    uri = window.location.hash.substr(1);
+    if (uri) {
+        openBox(uri);
     }
 }
 
@@ -44,5 +44,5 @@ function age(){
     var age = Math.abs(year - 1970);  
       
     //display the calculated age  
-    document.getElementById('dob').innerHTML = "12/19/2001 (" + age + ")";  
+    document.getElementById('dob').innerHTML = '19/12/01' +  '[' + age + ']';  
 }
