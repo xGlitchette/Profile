@@ -11,7 +11,7 @@ function openBox(overlay) {
     document.getElementById('home').style.display = "none";
     document.getElementById('closebtn_' + overlay).style.display = "block";
     document.getElementById(overlay).style.display = "block";
-    document.getElementById('box').style.height = "700px";
+    document.getElementById('box').style.height = "680px";
     //640 on phone, add later
 }
 
